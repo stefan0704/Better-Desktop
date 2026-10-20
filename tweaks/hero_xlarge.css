@@ -1,0 +1,38 @@
+/* Better Desktop - Game Details Hero Banner (Extra Large 550px) */
+
+[class*="NZMJ6g2iVnFsOOp-lDmIP"] {
+    --header-height: 550px !important;
+    max-height: 550px !important;
+    height: 550px !important;
+}
+
+[class*="_1IX7FPSY9Jb82KhBVBSkZa"] {
+    max-height: 550px !important;
+    height: 550px !important;
+}
+
+[class*="QlR9EFwTdUNm_J5vx54_Z"] {
+    height: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Main hero artwork: full width, cinematic cover scaling, smooth bottom fade */
+[class*="HNbe3eZf6H7dtJ042x1vM"]:not([class*="HSQWw9HUAP6jtA2OZjS-u"]) {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center top !important;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%) !important;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 75%, rgba(0, 0, 0, 0) 100%) !important;
+}
+
+/* Clean blur side stretch fallback when main image spans full container */
+[class*="HNbe3eZf6H7dtJ042x1vM"][class*="HSQWw9HUAP6jtA2OZjS-u"]:not([class*="_3_IUVzR9tpG_JKEjhwXEAb"]) {
+    opacity: 0 !important;
+}
+
+/* Remove bottom inverted reflection so it doesn't clash with content */
+[class*="HNbe3eZf6H7dtJ042x1vM"][class*="_3_IUVzR9tpG_JKEjhwXEAb"] {
+    display: none !important;
+}

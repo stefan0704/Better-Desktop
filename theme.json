@@ -1,0 +1,136 @@
+{
+  "name": "Better Desktop",
+  "manifest_version": 8,
+  "version": "v1.0",
+  "target": "Desktop",
+  "inject": {
+    "desktop.css": [
+      "desktop"
+    ]
+  },
+  "patches": {
+    "Recent Games Size": {
+      "default": "Large (125%)",
+      "type": "dropdown",
+      "values": {
+        "Default (100%)": {
+          "tweaks/recent_100.css": [
+            "desktop"
+          ]
+        },
+        "Medium (115%)": {
+          "tweaks/recent_115.css": [
+            "desktop"
+          ]
+        },
+        "Large (125%)": {
+          "tweaks/recent_125.css": [
+            "desktop"
+          ]
+        },
+        "Extra Large (135%)": {
+          "tweaks/recent_135.css": [
+            "desktop"
+          ]
+        },
+        "Huge (150%)": {
+          "tweaks/recent_150.css": [
+            "desktop"
+          ]
+        }
+      }
+    },
+    "Hero Banner Size": {
+      "default": "Large (480px)",
+      "type": "dropdown",
+      "values": {
+        "Large (480px)": {
+          "tweaks/hero_large.css": [
+            "desktop"
+          ]
+        },
+        "Extra Large (550px)": {
+          "tweaks/hero_xlarge.css": [
+            "desktop"
+          ]
+        },
+        "Default": {}
+      }
+    },
+    "Theme Color": {
+      "default": "Rusty",
+      "type": "dropdown",
+      "values": {
+        "Rusty": {
+          "colors/rusty.css": [
+            "desktop"
+          ]
+        },
+        "Cyberpunk 2077": {
+          "colors/cyberpunk.css": [
+            "desktop"
+          ]
+        },
+        "Default": {}
+      }
+    },
+    "Classic Menu": {
+      "default": "Unified (Centered Nav)",
+      "type": "dropdown",
+      "values": {
+        "Unified (Centered Nav)": {
+          "tweaks/menu_single_row.css": [
+            "desktop"
+          ]
+        },
+        "Unified (Centered Menu)": {
+          "tweaks/menu_single_row_centered_menu.css": [
+            "desktop"
+          ]
+        },
+        "Default": {}
+      }
+    },
+    "Bottom Bar": {
+      "default": "Buttons on Top",
+      "type": "dropdown",
+      "values": {
+        "Buttons on Top": {
+          "tweaks/bottombar_move_top.css": [
+            "desktop"
+          ]
+        },
+        "Default": {},
+        "Hidden": {
+          "tweaks/bottombar_hide.css": [
+            "desktop"
+          ]
+        }
+      }
+    },
+    "Game Action Bar": {
+      "default": "Centered",
+      "type": "dropdown",
+      "values": {
+        "Centered": {
+          "tweaks/action_bar_centered.css": [
+            "desktop"
+          ]
+        },
+        "Default": {}
+      }
+    },
+    "Buttons Style": {
+      "default": "Capsules",
+      "type": "dropdown",
+      "values": {
+        "Capsules": {
+          "tweaks/buttons_capsules.css": [
+            "desktop"
+          ]
+        },
+        "Default": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+/**
+ * Better Desktop - Steam Custom Theme
+ * File: desktop.css (Desktop target)
+ */
+
+:root {
+    /* ======================================================================
+       CUSTOMIZABLE SETTINGS
+       ====================================================================== */
+
+    /* Recent Games Shelf scale
+       Suggested values:
+         1.0  -> Steam default
+         1.15 -> 15% larger
+         1.25 -> 25% larger (Recommended)
+         1.35 -> 35% larger
+         1.50 -> 50% larger
+    */
+    --escala-jugados-recientemente: 1.0;
+}
+
+/* Scale recently played shelf capsules */
+[class*="V7RuDNUxhxoBRaiGWbk3B"] [class*="_1VMQWnw-9FBp-MVXUbWfS_"] {
+    zoom: var(--escala-jugados-recientemente) !important;
+}
+
+/* ==========================================================================
+   LIBRARY - GAME CAPSULES
+   ========================================================================== */
+
+/* Hide family sharing copy count circle badge */
+[class*="_3zxPLsbnU5LuorR0_EPCEC"] {
+    display: none !important;
+}
+

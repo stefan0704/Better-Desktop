@@ -1,0 +1,78 @@
+/* Better Desktop - Unified Single Row Header (Swapped: Chips on Left, Nav in Center) */
+[class*="_3Z7VQ1IMk4E3HsHvrkLNgo"] {
+    height: 42px !important;
+    position: relative !important;
+}
+
+[class*="_39oUCO1OuizVPwcnnv88no"] {
+    height: 42px !important;
+}
+
+/* Classic Menu (Steam, Ver, Amigos, Productos, Ayuda) placed on the LEFT */
+[class*="_1Ky59qmywxOUtNcI1cgmkX"] {
+    position: absolute !important;
+    top: 0 !important;
+    left: 8px !important;
+    transform: none !important;
+    height: 42px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    z-index: 15 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Base text styling for classic menu items in Default mode */
+[class*="_1Ky59qmywxOUtNcI1cgmkX"] [class*="_2UyOBeiSdBayaFdRa39N2O"] {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0 4px !important;
+    font-size: 11px !important;
+    color: #8b929a !important;
+    line-height: 42px !important;
+    height: 42px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    transition: color 0.15s ease !important;
+    cursor: pointer !important;
+}
+
+[class*="_1Ky59qmywxOUtNcI1cgmkX"] [class*="_2UyOBeiSdBayaFdRa39N2O"]:hover {
+    color: #ffffff !important;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+[class*="_1Ky59qmywxOUtNcI1cgmkX"] svg {
+    color: var(--better-icon-fill, #94a3b8) !important;
+    fill: var(--better-icon-fill, #94a3b8) !important;
+}
+
+/* Navigation (< > and Store, Library, Community...) centered in the MIDDLE */
+[class*="_3Z3ohQ8-1NKnCZkbS6fvy"] {
+    position: absolute !important;
+    top: 0 !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    height: 42px !important;
+    padding-top: 0 !important;
+    z-index: 10 !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+[class*="_2D64jIEK7wpUR_NlObDW76"] {
+    height: 32px !important;
+}
+
+/* Remove 12px dead spacer between unified header and library content */
+[class*="_2CmrnGY-Amtd83ScJkFvx2"] {
+    display: none !important;
+}
+

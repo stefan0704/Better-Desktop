@@ -1,0 +1,333 @@
+/* Better Desktop - Centered Game Details Action Bar and Modern Play Button */
+
+/* Center Action Bar Row */
+[class*="_9EHg918wH6CQCQlD5PWOO"] {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: relative !important;
+    width: 100% !important;
+    gap: 36px !important;
+}
+
+/* Play button container */
+[class*="_2zxzStp5qY5M1evOm8keES"] {
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+}
+
+/* Stats container centered group */
+[class*="_1YbtIWcfkQJOysLXQbwzRf"] {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    margin: 0 !important;
+}
+
+[class*="_1YbtIWcfkQJOysLXQbwzRf"] [class*="zjtAIAWI6HE0oCtJzw6Qt"] {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+[class*="_1YbtIWcfkQJOysLXQbwzRf"] [class*="_1mDAVT4sTzFRwJtlKCw2Ws"] {
+    flex: 0 0 auto !important;
+    width: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 32px !important;
+}
+
+/* Keep cloud status as an overlapping grid item to prevent width stretching */
+[class*="_1YbtIWcfkQJOysLXQbwzRf"] [class*="_2cRYms-zZc4misk9tj3bt8"] {
+    display: grid !important;
+    grid-template-columns: auto !important;
+    grid-template-rows: auto !important;
+    flex: 0 0 auto !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+[class*="_1YbtIWcfkQJOysLXQbwzRf"] [class*="_2cRYms-zZc4misk9tj3bt8"] > * {
+    grid-area: 1 / 1 !important;
+}
+
+/* Right side utility icons (Settings, Info, Favorite) docked to right edge */
+[class*="_1EAxK56o5a9Nieu5HYkJ4k"] {
+    position: absolute !important;
+    right: 24px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+/* Stats labels (Cloud Status, Last Session, Playtime, Achievements) */
+[class*="_1YbtIWcfkQJOysLXQbwzRf"] [class*="_34lrt5-Fc3usZU6trA1P0-"] {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.6px !important;
+    text-transform: uppercase !important;
+    color: #94a3b8 !important;
+    line-height: 1.2 !important;
+}
+
+/* Stats values */
+[class*="_1YbtIWcfkQJOysLXQbwzRf"] [class*="_2TYVGoD27ZMfjRirKQNLfk"],
+[class*="_1YbtIWcfkQJOysLXQbwzRf"] [class*="_1nfJNsQjTOXSQQyFahGnRi"] {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #f8fafc !important;
+    line-height: 1.3 !important;
+}
+
+/* Secondary dialog button inside cloud status if present */
+[class*="_1YbtIWcfkQJOysLXQbwzRf"] button {
+    color: #f8fafc !important;
+}
+
+/* Stats icon SVGs */
+[class*="_1YbtIWcfkQJOysLXQbwzRf"] svg {
+    color: #94a3b8 !important;
+    fill: #94a3b8 !important;
+}
+
+/* Achievements progress bar */
+[class*="_25YVDTaClw6Y2COPsU0UaV"] {
+    height: 4px !important;
+    border-radius: 2px !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    overflow: hidden !important;
+}
+
+[class*="_1FnTqlsi2_-TJf1d5apoS6"] {
+    border-radius: 2px !important;
+    background: linear-gradient(90deg, #38bdf8 0%, #818cf8 100%) !important;
+}
+
+/* ==========================================================================
+   MODERN PLAY BUTTON DESIGN
+   ========================================================================== */
+
+/* Outer Button Capsule */
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"] {
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 4px 18px rgba(16, 185, 129, 0.38), 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    height: 46px !important;
+}
+
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"]:hover {
+    border-color: rgba(255, 255, 255, 0.35) !important;
+    box-shadow: 0 6px 28px rgba(16, 185, 129, 0.58), 0 2px 6px rgba(0, 0, 0, 0.5) !important;
+    transform: translateY(-1px) !important;
+}
+
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"]:active {
+    transform: translateY(1px) !important;
+    box-shadow: 0 2px 10px rgba(16, 185, 129, 0.3) !important;
+}
+
+/* Green Play State Gradient (Installed Game) */
+[class*="_3cI5TXsFX3bvpR-7EBOtxq"] > [class*="_2AzIX5kl9k6JnxLfR5H4kX"] {
+    background: linear-gradient(135deg, #10b981 0%, #059669 45%, #047857 100%) !important;
+    color: #ffffff !important;
+    transition: all 0.2s ease !important;
+}
+
+[class*="_3cI5TXsFX3bvpR-7EBOtxq"] > [class*="_2AzIX5kl9k6JnxLfR5H4kX"]:hover {
+    background: linear-gradient(135deg, #34d399 0%, #10b981 45%, #059669 100%) !important;
+    color: #ffffff !important;
+}
+
+/* Blue Install State (Uninstalled Game) */
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"]:not([class*="_3cI5TXsFX3bvpR-7EBOtxq"]) {
+    box-shadow: 0 4px 18px rgba(14, 165, 233, 0.38), 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+}
+
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"]:not([class*="_3cI5TXsFX3bvpR-7EBOtxq"]):hover {
+    box-shadow: 0 6px 28px rgba(14, 165, 233, 0.58), 0 2px 6px rgba(0, 0, 0, 0.5) !important;
+}
+
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"]:not([class*="_3cI5TXsFX3bvpR-7EBOtxq"]) > [class*="_2AzIX5kl9k6JnxLfR5H4kX"] {
+    background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 45%, #0369a1 100%) !important;
+    color: #ffffff !important;
+}
+
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"]:not([class*="_3cI5TXsFX3bvpR-7EBOtxq"]) > [class*="_2AzIX5kl9k6JnxLfR5H4kX"]:hover {
+    background: linear-gradient(135deg, #38bdf8 0%, #0ea5e9 45%, #0284c7 100%) !important;
+    color: #ffffff !important;
+}
+
+/* Main Play Button Label and Icon */
+[class*="_3ydigb6zZAjJ0JCDgHwSYA"] {
+    border-radius: 0 !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.8px !important;
+    text-transform: uppercase !important;
+    font-size: 15px !important;
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45) !important;
+    padding: 0 24px !important;
+}
+
+[class*="_3ydigb6zZAjJ0JCDgHwSYA"] svg {
+    fill: #ffffff !important;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.45)) !important;
+    margin-right: 8px !important;
+}
+
+/* Dropdown Arrow Sub-button */
+[class*="_2q-gZ3XJzlvSGHSF-GvSmi"] {
+    margin-left: 0 !important;
+    border-radius: 0 !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.22) !important;
+    width: 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+[class*="_2q-gZ3XJzlvSGHSF-GvSmi"] svg {
+    fill: rgba(255, 255, 255, 0.92) !important;
+}
+
+/* ==========================================================================
+   STICKY FLOATING BAR WHEN SCROLLED DOWN (FULL-SIZE NORMAL PLAY BUTTON)
+   ========================================================================== */
+
+/* Allow sticky header containers to accommodate 46px normal button */
+[class*="_39RheXihcN6H2k2muQTjkI"] {
+    height: auto !important;
+    min-height: 62px !important;
+}
+
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_3fLo166MlaNqP8r8tTyRz"] {
+    height: auto !important;
+    min-height: 62px !important;
+    padding-top: 15px !important;
+    padding-bottom: 8px !important;
+}
+
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_3Y87YQY56ZCOqhgcZFaDc5"] {
+    height: auto !important;
+    padding: 8px 24px !important;
+}
+
+/* Row in sticky header */
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_9EHg918wH6CQCQlD5PWOO"] {
+    height: 46px !important;
+    gap: 16px !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Normal 46px Play button container and capsule */
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_2zxzStp5qY5M1evOm8keES"] {
+    height: 46px !important;
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+}
+
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_1FnJ6dPuknQFQ2RTpKTI16"] {
+    height: 46px !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 18px rgba(16, 185, 129, 0.38), 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+    transform: none !important;
+}
+
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_1FnJ6dPuknQFQ2RTpKTI16"]:not([class*="_3cI5TXsFX3bvpR-7EBOtxq"]) {
+    box-shadow: 0 4px 18px rgba(14, 165, 233, 0.38), 0 1px 3px rgba(0, 0, 0, 0.5) !important;
+}
+
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_1FnJ6dPuknQFQ2RTpKTI16"]:hover {
+    box-shadow: 0 6px 24px rgba(16, 185, 129, 0.55), 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+    transform: translateY(-1px) !important;
+}
+
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_1FnJ6dPuknQFQ2RTpKTI16"]:not([class*="_3cI5TXsFX3bvpR-7EBOtxq"]):hover {
+    box-shadow: 0 6px 24px rgba(14, 165, 233, 0.55), 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Full-size Play button label and SVG */
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_3ydigb6zZAjJ0JCDgHwSYA"] {
+    height: 100% !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.8px !important;
+    padding: 0 24px !important;
+}
+
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_3ydigb6zZAjJ0JCDgHwSYA"] svg {
+    width: 14px !important;
+    height: 14px !important;
+    margin-right: 8px !important;
+}
+
+/* Full-size dropdown arrow sub-button */
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_2q-gZ3XJzlvSGHSF-GvSmi"] {
+    height: 100% !important;
+    width: 32px !important;
+    padding: 0 !important;
+}
+
+/* Hide stats group in sticky bar */
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_1mDAVT4sTzFRwJtlKCw2Ws"] {
+    display: none !important;
+}
+
+/* Title and Logo container */
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_1YbtIWcfkQJOysLXQbwzRf"] {
+    height: 46px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_2MBVRXpsw6DUjs7937DWZW"] {
+    position: relative !important;
+    height: 46px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 !important;
+    opacity: 1 !important;
+}
+
+/* Game icon */
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_2MBVRXpsw6DUjs7937DWZW"] [class*="_1iNIp1p3ZhPoBwZbkmdb8o"] {
+    height: 28px !important;
+    width: 28px !important;
+    border-radius: 5px !important;
+    margin-right: 10px !important;
+}
+
+/* Game title text */
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_2MBVRXpsw6DUjs7937DWZW"] [class*="_3rpUkswF6xc_ste4Ros_xM"] {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    color: #f8fafc !important;
+    line-height: 46px !important;
+}
+
+/* Right side utility icons in sticky bar */
+[class*="_39RheXihcN6H2k2muQTjkI"] [class*="_1EAxK56o5a9Nieu5HYkJ4k"] {
+    position: absolute !important;
+    right: 24px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    height: 46px !important;
+    margin: 0 !important;
+}
+
+

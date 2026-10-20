@@ -1,0 +1,275 @@
+/**
+ * Better Desktop - Color Scheme: Rusty
+ * Industrial warm rusty palette: burnished copper, warm amber, deep charcoal.
+ */
+
+:root {
+    --better-accent: #ea580c;
+    --better-accent-bright: #fb923c;
+    --better-hover-bg: rgba(234, 88, 12, 0.15);
+    --better-hover-border: rgba(234, 88, 12, 0.45);
+    --better-hover-glow: rgba(234, 88, 12, 0.3);
+    --better-icon-fill: #ea580c;
+
+    --rusty-primary: #ea580c;
+    --rusty-primary-bright: #fb923c;
+    --rusty-primary-dark: #9a3412;
+    --rusty-accent-gradient: linear-gradient(135deg, #c2410c 0%, #ea580c 50%, #fb923c 100%);
+    --rusty-glow: rgba(234, 88, 12, 0.4);
+    --rusty-bg-dark: #080a0e;
+    --rusty-bg-surface: #0f131b;
+    --rusty-bg-elevated: #161b26;
+    --rusty-border: rgba(234, 88, 12, 0.18);
+    --rusty-library-gradient: radial-gradient(ellipse 80% 35% at 50% 0%, rgba(234, 88, 12, 0.09) 0%, rgba(15, 19, 27, 0) 75%),
+                              linear-gradient(180deg, #11151e 0%, #0d1017 30%, #080a0e 100%);
+}
+
+/* ==========================================================================
+   1. GLOBAL BACKGROUND AND MAIN LIBRARY
+   ========================================================================== */
+
+/* Main window background */
+body.DesktopUI {
+    background-color: var(--rusty-bg-dark) !important;
+}
+
+/* Library content area (shelves and backgrounds) */
+[class*="_3Sb2o_mQ30IDRh0C72QUUu"],
+[class*="_3VQUewWB8g6Z5qB4C7dGFr"],
+[class*="_2Dd4T78PcCTUVgOtDGFY5j"],
+[class*="_3lDczhulqraStjCitLYJ1K"],
+[class*="_2gSXCB6PbOlMxslr8hm6dm"],
+[class*="_3BFcmjAaMyP6GTPwc0VyWi"] {
+    background: var(--rusty-library-gradient) !important;
+    background-color: var(--rusty-bg-dark) !important;
+}
+
+/* Internal scroll containers in library */
+[class*="_2Z9gJ6Pd7eZn-kfODcXJuR"],
+[class*="_2tC_c87MH67xQM7Y0pVyXm"] {
+    background: transparent !important;
+}
+
+/* ==========================================================================
+   2. TOP BAR AND SUPERNAV
+   ========================================================================== */
+
+/* Title bar and top header */
+[class*="_3Z7VQ1IMk4E3HsHvrkLNgo"] {
+    background: linear-gradient(180deg, #090b0f 0%, #06070a 100%) !important;
+    border-bottom: 1px solid var(--rusty-border) !important;
+}
+
+/* Top bar accent highlight */
+.title-area-highlight {
+    background-image: var(--rusty-accent-gradient) !important;
+}
+
+/* Active tab in top navigation (STORE, LIBRARY, COMMUNITY...) */
+[class*="_2Lu3d-5qLmW4i19ysTt2jT"][class*="_7AlhCx3XGzBeIrQaCneUD"] [class*="_19axKcqYRuaJ8vdYKYmtTQ"],
+[class*="_2Lu3d-5qLmW4i19ysTt2jT"][class*="_1gqEjB5QsKT_NftD1dEsdZ"] [class*="_19axKcqYRuaJ8vdYKYmtTQ"] {
+    color: var(--rusty-primary-bright) !important;
+    text-shadow: 0 0 12px rgba(251, 146, 60, 0.5) !important;
+}
+
+/* Hover effect on top tabs */
+[class*="_2Lu3d-5qLmW4i19ysTt2jT"]:hover [class*="_19axKcqYRuaJ8vdYKYmtTQ"] {
+    color: #fdba74 !important;
+}
+
+/* Active tab indicator bar */
+[class*="N8aJrSpxQ6II4CY_aFdYI"] {
+    background-color: var(--rusty-primary) !important;
+    box-shadow: 0 0 8px var(--rusty-glow) !important;
+}
+
+/* ==========================================================================
+   3. SIDEBAR GAME LIST
+   ========================================================================== */
+
+/* Sidebar container */
+[class*="RGNMWtyj73_-WdhflrmuY"],
+[class*="_3WJCt_OkjPA6npxOtguSt5"] {
+    background: linear-gradient(180deg, #0d1017 0%, #080a0e 100%) !important;
+    border-right: 1px solid var(--rusty-border) !important;
+}
+
+/* Top filter bar in sidebar */
+[class*="_3x1HklzyDs4TEjACrRO2tB"] {
+    background: linear-gradient(180deg, #131722 0%, #0d1017 100%) !important;
+    border-bottom: 1px solid rgba(234, 88, 12, 0.12) !important;
+}
+
+/* Category section headers (3DS, PC, PS1...) */
+[class*="_2sYIghGVXJr6tsQVvcryy8"] {
+    background: linear-gradient(to right, rgba(234, 88, 12, 0.16) 0%, rgba(13, 16, 23, 0) 100%) !important;
+    border-left: 2px solid var(--rusty-primary) !important;
+    transition: background 0.2s ease !important;
+}
+
+[class*="_2sYIghGVXJr6tsQVvcryy8"]:hover {
+    background: linear-gradient(to right, rgba(234, 88, 12, 0.3) 0%, rgba(234, 88, 12, 0.05) 100%) !important;
+}
+
+/* Category header text */
+[class*="_2mZ8LlvoUiyeEUtIWuTri"] {
+    color: #e2e8f0 !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Selected game in sidebar list */
+[class*="_2TKEazUUS3TlniZfpc8OOe"][class*="Selected_"],
+[class*="_2-O4ZG0KrnSrzISHBKctFQ"][class*="_2ws8DONH9fxQjPXEmRpujE"]:focus,
+[class*="_2-O4ZG0KrnSrzISHBKctFQ"].Selected {
+    background: linear-gradient(90deg, rgba(234, 88, 12, 0.25) 0%, rgba(234, 88, 12, 0.05) 100%) !important;
+    border-left: 3px solid var(--rusty-primary-bright) !important;
+    color: #ffffff !important;
+}
+
+/* Hover on sidebar game item */
+[class*="_2TKEazUUS3TlniZfpc8OOe"]:hover,
+[class*="_2-O4ZG0KrnSrzISHBKctFQ"]:hover {
+    background-color: rgba(234, 88, 12, 0.08) !important;
+    border-radius: 4px !important;
+}
+
+/* ==========================================================================
+   4. ACTION BUTTONS AND PLAY BUTTON (Rusty Molten Accents)
+   ========================================================================== */
+
+/* Play button in featured Recently Played hero capsule (e.g. Dead Cells) */
+[class*="_3AjoLnMNKxYmNTGTJCLfgs"] {
+    background-image: radial-gradient(circle at 50% 50%, #f97316 0%, #c2410c 100%) !important;
+    box-shadow: 0 4px 16px rgba(234, 88, 12, 0.5) !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+[class*="_3AjoLnMNKxYmNTGTJCLfgs"]:hover {
+    transform: scale(1.06) !important;
+    box-shadow: 0 6px 22px rgba(249, 115, 22, 0.7) !important;
+}
+
+/* Centered Action Bar: Outer Play Button Capsule */
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"] {
+    border: 1px solid rgba(234, 88, 12, 0.4) !important;
+    box-shadow: 0 4px 18px rgba(194, 65, 12, 0.45) !important;
+}
+
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"]:hover {
+    border-color: rgba(251, 146, 60, 0.6) !important;
+    box-shadow: 0 6px 26px rgba(234, 88, 12, 0.65) !important;
+}
+
+/* Main PLAY button in game details view (both default and centered bar) */
+[class*="_3cI5TXsFX3bvpR-7EBOtxq"] > [class*="_2AzIX5kl9k6JnxLfR5H4kX"],
+[class*="_1fHBRg7vFnKszK6EiOdIEY"] button,
+[class*="_1fHBRg7vFnKszK6EiOdIEY"] [role="button"] {
+    background: var(--rusty-accent-gradient) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 16px rgba(194, 65, 12, 0.45) !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+[class*="_3cI5TXsFX3bvpR-7EBOtxq"] > [class*="_2AzIX5kl9k6JnxLfR5H4kX"]:hover,
+[class*="_1fHBRg7vFnKszK6EiOdIEY"] button:hover,
+[class*="_1fHBRg7vFnKszK6EiOdIEY"] [role="button"]:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 24px rgba(234, 88, 12, 0.65) !important;
+}
+
+/* ==========================================================================
+   5. GAME CARDS AND SHELVES
+   ========================================================================== */
+
+/* Warm hover glow on game cards */
+[class*="WYgDg9NyCcMIVuMyZ_NBC"]:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.7), 0 0 14px rgba(234, 88, 12, 0.35) !important;
+}
+
+/* Shelf title dropdown display */
+[class*="DialogDropDown_CurrentDisplay"] {
+    color: #f1f5f9 !important;
+}
+
+/* Shelf bottom separator */
+[class*="V7RuDNUxhxoBRaiGWbk3B"] {
+    border-bottom: 1px solid rgba(234, 88, 12, 0.08) !important;
+    padding-bottom: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+/* ==========================================================================
+   6. CUSTOM SCROLLBARS
+   ========================================================================== */
+
+::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(8, 10, 14, 0.6) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7c2d12 !important;
+    border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ea580c !important;
+}
+
+/* ==========================================================================
+   7. BOTTOM BAR / FOOTER (Rusty Theme Integration)
+   ========================================================================== */
+
+/* Main bottom bar container */
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"] {
+    background: linear-gradient(180deg, #0d1017 0%, #06070a 100%) !important;
+    border-top: 1px solid var(--rusty-border) !important;
+}
+
+/* Bottom bar text labels */
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_3OhUxFVlQYr9W5ThxstR8k"],
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_3wJnTtcTLEp0R7eQj_mK8Y"] {
+    color: #94a3b8 !important;
+    transition: color 0.15s ease !important;
+}
+
+/* Bottom bar SVG icons */
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"] svg {
+    fill: var(--rusty-primary) !important;
+    color: var(--rusty-primary) !important;
+    transition: fill 0.15s ease, transform 0.15s ease !important;
+}
+
+/* Bottom bar buttons hover state */
+[class*="_2foCkpRXhqq0UGVE50BWqj"]:hover,
+[class*="ip-YZhijAMZcuRoXBGiye"]:hover,
+[class*="_1TdaAqMFadi0UTqilrkelR"]:hover {
+    background-color: rgba(234, 88, 12, 0.12) !important;
+    border-radius: 4px !important;
+}
+
+[class*="_2foCkpRXhqq0UGVE50BWqj"]:hover [class*="_3OhUxFVlQYr9W5ThxstR8k"],
+[class*="ip-YZhijAMZcuRoXBGiye"]:hover [class*="_3wJnTtcTLEp0R7eQj_mK8Y"],
+[class*="_1TdaAqMFadi0UTqilrkelR"]:hover [class*="_3OhUxFVlQYr9W5ThxstR8k"] {
+    color: var(--rusty-primary-bright) !important;
+}
+
+[class*="_2foCkpRXhqq0UGVE50BWqj"]:hover svg,
+[class*="ip-YZhijAMZcuRoXBGiye"]:hover svg,
+[class*="_1TdaAqMFadi0UTqilrkelR"]:hover svg {
+    fill: var(--rusty-primary-bright) !important;
+    color: var(--rusty-primary-bright) !important;
+}
+
+/* Steam client update banner (bottom bar) */
+[class*="_2iJsgdTIX9Tj23rWnB7Q-c"] {
+    background: var(--rusty-accent-gradient) !important;
+    color: #ffffff !important;
+}

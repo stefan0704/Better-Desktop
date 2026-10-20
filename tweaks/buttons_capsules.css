@@ -1,0 +1,250 @@
+/* Better Desktop - Buttons Style: Capsules */
+
+/* ==========================================================================
+   CLASSIC MENU ITEMS (Steam, Ver, Amigos, Productos, Ayuda)
+   ========================================================================== */
+
+:root body [class*="_1Ky59qmywxOUtNcI1cgmkX"] [class*="_2UyOBeiSdBayaFdRa39N2O"] {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 6px !important;
+    padding: 0 10px !important;
+    font-size: 11px !important;
+    color: #94a3b8 !important;
+    line-height: 28px !important;
+    height: 28px !important;
+    min-height: 28px !important;
+    max-height: 28px !important;
+    box-sizing: border-box !important;
+    transition: all 0.15s ease !important;
+}
+
+:root body [class*="_1Ky59qmywxOUtNcI1cgmkX"] [class*="_2UyOBeiSdBayaFdRa39N2O"]:hover {
+    background: var(--better-hover-bg, rgba(255, 255, 255, 0.12)) !important;
+    border-color: var(--better-hover-border, rgba(255, 255, 255, 0.25)) !important;
+    color: var(--better-accent-bright, #ffffff) !important;
+    box-shadow: 0 0 8px var(--better-hover-glow, rgba(255, 255, 255, 0.15)) !important;
+}
+
+/* ==========================================================================
+   TOP RIGHT SYSTEM CHIPS (Megaphone, Notifications, Profile, Big Picture)
+   ========================================================================== */
+
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] > [class*="Focusable"] {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Lu3d-5qLmW4i19ysTt2jT"] {
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Lu3d-5qLmW4i19ysTt2jT"] > div {
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* 28x28 Square Chips */
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Szzh5sKyGgnLUR870zbDE"] {
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    max-width: 28px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 6px !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: all 0.15s ease !important;
+    box-sizing: border-box !important;
+}
+
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Szzh5sKyGgnLUR870zbDE"]:hover {
+    background: var(--better-hover-bg, rgba(255, 255, 255, 0.12)) !important;
+    border-color: var(--better-hover-border, rgba(255, 255, 255, 0.25)) !important;
+    box-shadow: 0 0 8px var(--better-hover-glow, rgba(255, 255, 255, 0.15)) !important;
+}
+
+/* Hide extra decorative arc in Megaphone for 28x28 square chip */
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Szzh5sKyGgnLUR870zbDE"] svg[class*="_1B_GY6Ybp1MERAoz73-3um"],
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_5wILZhsLODVwGfcJ0hKmJ"] svg:not(:first-child),
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_1B_GY6Ybp1MERAoz73-3um"] {
+    display: none !important;
+}
+
+/* SVGs centering and size in system chips */
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Szzh5sKyGgnLUR870zbDE"] svg,
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_3LKQ3S_yqrebeNLF6aeiog"] svg {
+    width: 14px !important;
+    height: 14px !important;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    margin: 0 !important;
+    display: block !important;
+    fill: var(--better-icon-fill, #94a3b8) !important;
+    color: var(--better-icon-fill, #94a3b8) !important;
+    transition: all 0.15s ease !important;
+}
+
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Szzh5sKyGgnLUR870zbDE"]:hover svg,
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_3LKQ3S_yqrebeNLF6aeiog"]:hover svg {
+    fill: var(--better-accent-bright, #ffffff) !important;
+    color: var(--better-accent-bright, #ffffff) !important;
+}
+
+/* Active Megaphone Notice Badge */
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Szzh5sKyGgnLUR870zbDE"][class*="_1oEwirQksXfZ-3RWWslbAR"] {
+    background: rgba(25, 153, 255, 0.18) !important;
+    border-color: rgba(25, 153, 255, 0.45) !important;
+    box-shadow: 0 0 8px rgba(25, 153, 255, 0.25) !important;
+}
+
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Szzh5sKyGgnLUR870zbDE"][class*="_1oEwirQksXfZ-3RWWslbAR"] svg {
+    fill: #38bdf8 !important;
+    color: #38bdf8 !important;
+}
+
+/* Active Notification Badge (only when unread notifications are present: _3L1c8C0o_xXzPy26aoLBFd) */
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Szzh5sKyGgnLUR870zbDE"][class*="_3L1c8C0o_xXzPy26aoLBFd"] {
+    background: rgba(163, 230, 53, 0.16) !important;
+    border-color: rgba(163, 230, 53, 0.35) !important;
+    box-shadow: 0 0 6px rgba(163, 230, 53, 0.2) !important;
+}
+
+:root body [class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Szzh5sKyGgnLUR870zbDE"][class*="_3L1c8C0o_xXzPy26aoLBFd"] svg {
+    fill: #a3e635 !important;
+    color: #a3e635 !important;
+}
+
+/* Profile Chip */
+:root body [class*="_3yD46y5pd3zOGR7CzKs0mC"] {
+    height: 28px !important;
+    min-height: 28px !important;
+    max-height: 28px !important;
+    padding: 0 8px 0 3px !important;
+    margin: 0 !important;
+    border-radius: 6px !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.15s ease !important;
+    box-sizing: border-box !important;
+}
+
+:root body [class*="_3yD46y5pd3zOGR7CzKs0mC"]:hover {
+    background: var(--better-hover-bg, rgba(255, 255, 255, 0.12)) !important;
+    border-color: var(--better-hover-border, rgba(255, 255, 255, 0.25)) !important;
+    box-shadow: 0 0 8px var(--better-hover-glow, rgba(255, 255, 255, 0.15)) !important;
+}
+
+:root body [class*="_3yD46y5pd3zOGR7CzKs0mC"] [class*="avatarHolder"] {
+    width: 22px !important;
+    height: 22px !important;
+    min-width: 22px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+:root body [class*="_3yD46y5pd3zOGR7CzKs0mC"] img[class*="avatar"] {
+    width: 22px !important;
+    height: 22px !important;
+    border-radius: 4px !important;
+}
+
+:root body [class*="_3yD46y5pd3zOGR7CzKs0mC"] > div:not([class*="avatarHolder"]) {
+    font-size: 12px !important;
+    line-height: 28px !important;
+    color: #cbd5e1 !important;
+    font-weight: 500 !important;
+    transition: color 0.15s ease !important;
+}
+
+:root body [class*="_3yD46y5pd3zOGR7CzKs0mC"]:hover > div:not([class*="avatarHolder"]) {
+    color: var(--better-accent-bright, #ffffff) !important;
+}
+
+:root body [class*="_3yD46y5pd3zOGR7CzKs0mC"] svg[class*="_3x51wbt5DYyWC8JKwQ51ir"] {
+    width: 10px !important;
+    height: 10px !important;
+    fill: #94a3b8 !important;
+    color: #94a3b8 !important;
+    transition: all 0.15s ease !important;
+}
+
+:root body [class*="_3yD46y5pd3zOGR7CzKs0mC"]:hover svg[class*="_3x51wbt5DYyWC8JKwQ51ir"] {
+    fill: var(--better-accent-bright, #ffffff) !important;
+    color: var(--better-accent-bright, #ffffff) !important;
+}
+
+/* Moved action buttons container position for compact capsule system buttons */
+:root body [class*="_3vCzSrrXZzZjVJFZNg9SGu"] {
+    right: 308px !important;
+}
+
+:root body [class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_2foCkpRXhqq0UGVE50BWqj"],
+:root body [class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_2EQ7ghgqIdjKv9jsQC0Zq9"],
+:root body [class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_1TdaAqMFadi0UTqilrkelR"],
+:root body [class*="_2foCkpRXhqq0UGVE50BWqj"],
+:root body [class*="_2EQ7ghgqIdjKv9jsQC0Zq9"],
+:root body [class*="_1TdaAqMFadi0UTqilrkelR"] {
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    max-width: 28px !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 6px !important;
+    box-sizing: border-box !important;
+}
+
+:root body [class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_2foCkpRXhqq0UGVE50BWqj"]:hover,
+:root body [class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:hover,
+:root body [class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_1TdaAqMFadi0UTqilrkelR"]:hover,
+:root body [class*="_2foCkpRXhqq0UGVE50BWqj"]:hover,
+:root body [class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:hover,
+:root body [class*="_1TdaAqMFadi0UTqilrkelR"]:hover {
+    background: var(--better-hover-bg, rgba(255, 255, 255, 0.12)) !important;
+    border-color: var(--better-hover-border, rgba(255, 255, 255, 0.25)) !important;
+    box-shadow: 0 0 8px var(--better-hover-glow, rgba(255, 255, 255, 0.15)) !important;
+}
+
+/* Download pill capsule styling when downloading */
+:root body [class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:has([class*="_2_FomluqqgQ2Hx8ON3AVep"]),
+:root body [class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:has([class*="_2_FomluqqgQ2Hx8ON3AVep"]) {
+    height: 28px !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 6px !important;
+}
+
+:root body [class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:has([class*="_2_FomluqqgQ2Hx8ON3AVep"]):hover,
+:root body [class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:has([class*="_2_FomluqqgQ2Hx8ON3AVep"]):hover {
+    background: var(--better-hover-bg, rgba(255, 255, 255, 0.12)) !important;
+    border-color: var(--better-hover-border, rgba(255, 255, 255, 0.25)) !important;
+    box-shadow: 0 0 8px var(--better-hover-glow, rgba(255, 255, 255, 0.15)) !important;
+}

@@ -1,0 +1,298 @@
+/* Better Desktop - Move Bottom Bar to Top Header (Icons Only) */
+
+/* Collapse bottom bar container */
+[class*="_1_yS5UP7el0aN4vntx3dx"] {
+    height: 0 !important;
+    min-height: 0 !important;
+    overflow: visible !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Hide update banner or other non-button child if present */
+[class*="_1_yS5UP7el0aN4vntx3dx"] > div:first-child:not([class*="_3vCzSrrXZzZjVJFZNg9SGu"]) {
+    display: none !important;
+}
+
+/* Move bottom action bar to top right header */
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"] {
+    position: fixed !important;
+    top: 5px !important;
+    right: 347px !important;
+    height: 37px !important;
+    width: auto !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 6px !important;
+    z-index: 99 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"].Maximized,
+.Maximized [class*="_3vCzSrrXZzZjVJFZNg9SGu"] {
+    box-shadow: none !important;
+}
+
+/* Hide text labels in all 3 moved buttons */
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_3OhUxFVlQYr9W5ThxstR8k"],
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_3wJnTtcTLEp0R7eQj_mK8Y"] {
+    display: none !important;
+}
+
+/* Positioning: Reorder download button to leftmost of moved buttons */
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"] {
+    order: -1 !important;
+}
+
+/* Base button styling: 24x24 chip */
+[class*="_2foCkpRXhqq0UGVE50BWqj"],
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"],
+[class*="_1TdaAqMFadi0UTqilrkelR"] {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    max-width: 24px;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid transparent;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: all 0.15s ease !important;
+    box-sizing: border-box !important;
+    -webkit-app-region: no-drag !important;
+}
+
+[class*="_2foCkpRXhqq0UGVE50BWqj"]:hover,
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:hover,
+[class*="_1TdaAqMFadi0UTqilrkelR"]:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Active Download State - Polished Pill (210px) */
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:has([class*="_2_FomluqqgQ2Hx8ON3AVep"]) {
+    width: 210px !important;
+    min-width: 210px !important;
+    max-width: 210px !important;
+    flex: 0 0 210px !important;
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+    height: 24px !important;
+    padding: 0 10px 0 6px !important;
+    background: transparent !important;
+    border: 1px solid transparent !important;
+    border-radius: 4px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+}
+
+/* Inner wrappers reset */
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"] [class*="ip-YZhijAMZcuRoXBGiye"] {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:has([class*="_2_FomluqqgQ2Hx8ON3AVep"]) [class*="ip-YZhijAMZcuRoXBGiye"] {
+    width: 100% !important;
+    height: 100% !important;
+    flex: 1 1 100% !important;
+    flex-grow: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Flex row wrapper inside download button */
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:has([class*="_2_FomluqqgQ2Hx8ON3AVep"]) [class*="_2VtAqT03BpBsVdmxwptn9D"] {
+    width: 100% !important;
+    height: 100% !important;
+    flex: 1 1 100% !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Hide default Steam decorative overlay that created the weird grey box */
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"] [class*="_21vPQjHoo0uwud5lfCD_x-"] {
+    display: none !important;
+}
+
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_1KrJ3sFAqPBN9mfpaNTU5F"] {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Icon / Game image container */
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:has([class*="_2_FomluqqgQ2Hx8ON3AVep"]) .tool-tip-source,
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:has([class*="_2_FomluqqgQ2Hx8ON3AVep"]) [class*="_1KrJ3sFAqPBN9mfpaNTU5F"] {
+    width: 18px !important;
+    height: 18px !important;
+    min-width: 18px !important;
+    max-width: 18px !important;
+    flex: 0 0 18px !important;
+    flex-grow: 0 !important;
+    flex-shrink: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+}
+
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:has([class*="_2_FomluqqgQ2Hx8ON3AVep"]) [class*="_1R9r2OBCxAmtuUVrgBEUBw"] {
+    width: 18px !important;
+    height: 18px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 4px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:has([class*="_2_FomluqqgQ2Hx8ON3AVep"]) img {
+    width: 18px !important;
+    height: 18px !important;
+    object-fit: cover !important;
+    border-radius: 3px !important;
+    display: block !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* SVG icons styling */
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"] svg {
+    width: 14px !important;
+    height: 14px !important;
+    fill: #94a3b8 !important;
+    color: #94a3b8 !important;
+    transition: all 0.15s ease !important;
+    display: block !important;
+}
+
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:has([class*="_2_FomluqqgQ2Hx8ON3AVep"]) svg {
+    fill: var(--better-accent-glow, #38bdf8) !important;
+    color: var(--better-accent-glow, #38bdf8) !important;
+}
+
+/* Download Progress Container */
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"] [class*="_2_FomluqqgQ2Hx8ON3AVep"] {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 4px !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    width: auto !important;
+    overflow: hidden !important;
+}
+
+/* Download Text Row */
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"] [class*="_1xCcFYWIrJ7W8WRDmGvR3y"] {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: baseline !important;
+    justify-content: space-between !important;
+    line-height: 1.1 !important;
+    white-space: nowrap !important;
+    gap: 6px !important;
+    overflow: hidden !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"] [class*="_1sCy-pm412Smb0wJx0W-4"]:not([class*="_1-TLiuTZBQNz2fvBGj6aq-"]) {
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    color: #cbd5e1 !important;
+    line-height: 1.1 !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    letter-spacing: -0.1px !important;
+}
+
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"] [class*="_1-TLiuTZBQNz2fvBGj6aq-"] {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    color: var(--better-accent-bright, #38bdf8) !important;
+    line-height: 1.1 !important;
+    flex-shrink: 0 !important;
+}
+
+/* Download Progress Bar */
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"] [class*="wi0pDywRgOCxhG7OqQNaA"] {
+    height: 3px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    border-radius: 2px !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"] [class*="wi0pDywRgOCxhG7OqQNaA"]::after {
+    border-radius: 2px !important;
+    background: var(--better-accent, #38bdf8) !important;
+}
+
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"] [class*="DialogProgressBar_Value"] {
+    background: var(--better-accent, #38bdf8) !important;
+    height: 100% !important;
+    border-radius: 2px !important;
+}
+
+/* Hover effects */
+[class*="_2foCkpRXhqq0UGVE50BWqj"]:hover,
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:hover,
+[class*="_1TdaAqMFadi0UTqilrkelR"]:hover {
+    background: var(--better-hover-bg, rgba(255, 255, 255, 0.12)) !important;
+    border-color: var(--better-hover-border, rgba(255, 255, 255, 0.25)) !important;
+    box-shadow: 0 0 8px var(--better-hover-glow, rgba(255, 255, 255, 0.15)) !important;
+}
+
+[class*="_2foCkpRXhqq0UGVE50BWqj"]:hover svg,
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:hover svg,
+[class*="_1TdaAqMFadi0UTqilrkelR"]:hover svg {
+    fill: var(--better-accent-bright, #ffffff) !important;
+    color: var(--better-accent-bright, #ffffff) !important;
+}
+

@@ -1,0 +1,419 @@
+/**
+ * Better Desktop - Color Scheme: Cyberpunk 2077
+ * High-tech Night City palette: signature electric yellow (#fcee0a),
+ * vibrant neon cyan (#00f0ff), dark obsidian carbon (#07080b, #0a0c12),
+ * and subtle hot magenta accents (#ff003c).
+ */
+
+:root {
+    --better-accent: #00f0ff;
+    --better-accent-bright: #fcee0a;
+    --better-hover-bg: rgba(0, 240, 255, 0.14);
+    --better-hover-border: rgba(0, 240, 255, 0.5);
+    --better-hover-glow: rgba(0, 240, 255, 0.4);
+    --better-icon-fill: #00f0ff;
+
+    --cyber-yellow: #fcee0a;
+    --cyber-yellow-bright: #fff54d;
+    --cyber-yellow-dark: #d6ca00;
+    --cyber-cyan: #00f0ff;
+    --cyber-cyan-bright: #70f8ff;
+    --cyber-cyan-dark: #00b4cc;
+    --cyber-red: #ff003c;
+    --cyber-magenta: #ff2a6d;
+
+    --cyber-accent-gradient: linear-gradient(135deg, #00f0ff 0%, #00b4cc 40%, #fcee0a 100%);
+    --cyber-yellow-gradient: linear-gradient(135deg, #fff54d 0%, #fcee0a 45%, #ffd000 100%);
+    --cyber-cyan-gradient: linear-gradient(135deg, #70f8ff 0%, #00f0ff 45%, #00b4cc 100%);
+
+    --cyber-bg-darkest: #07080b;
+    --cyber-bg-dark: #0a0c12;
+    --cyber-bg-surface: #0f131c;
+    --cyber-bg-elevated: #161b27;
+
+    --cyber-border-cyan: rgba(0, 240, 255, 0.22);
+    --cyber-border-yellow: rgba(252, 238, 10, 0.28);
+
+    --cyber-library-gradient: radial-gradient(ellipse 85% 40% at 50% 0%, rgba(0, 240, 255, 0.08) 0%, rgba(10, 12, 18, 0) 75%),
+                              linear-gradient(180deg, #0e121a 0%, #0a0c12 35%, #07080b 100%);
+}
+
+/* ==========================================================================
+   1. GLOBAL BACKGROUND AND MAIN LIBRARY
+   ========================================================================== */
+
+/* Main window background */
+body.DesktopUI {
+    background-color: var(--cyber-bg-darkest) !important;
+}
+
+/* Library content area (shelves and backgrounds) */
+[class*="_3Sb2o_mQ30IDRh0C72QUUu"],
+[class*="_3VQUewWB8g6Z5qB4C7dGFr"],
+[class*="_2Dd4T78PcCTUVgOtDGFY5j"],
+[class*="_3lDczhulqraStjCitLYJ1K"],
+[class*="_2gSXCB6PbOlMxslr8hm6dm"],
+[class*="_3BFcmjAaMyP6GTPwc0VyWi"] {
+    background: var(--cyber-library-gradient) !important;
+    background-color: var(--cyber-bg-darkest) !important;
+}
+
+/* Internal scroll containers in library */
+[class*="_2Z9gJ6Pd7eZn-kfODcXJuR"],
+[class*="_2tC_c87MH67xQM7Y0pVyXm"] {
+    background: transparent !important;
+}
+
+/* ==========================================================================
+   2. TOP BAR AND SUPERNAV (Cyan Border, Cyber Yellow Active Tab)
+   ========================================================================== */
+
+/* Title bar and top header */
+[class*="_3Z7VQ1IMk4E3HsHvrkLNgo"] {
+    background: linear-gradient(180deg, #090b10 0%, #06070a 100%) !important;
+    border-bottom: 1px solid var(--cyber-border-cyan) !important;
+}
+
+/* Top bar accent highlight */
+.title-area-highlight {
+    background-image: var(--cyber-accent-gradient) !important;
+}
+
+/* Active tab in top navigation (STORE, LIBRARY, COMMUNITY...) */
+[class*="_2Lu3d-5qLmW4i19ysTt2jT"][class*="_7AlhCx3XGzBeIrQaCneUD"] [class*="_19axKcqYRuaJ8vdYKYmtTQ"],
+[class*="_2Lu3d-5qLmW4i19ysTt2jT"][class*="_1gqEjB5QsKT_NftD1dEsdZ"] [class*="_19axKcqYRuaJ8vdYKYmtTQ"] {
+    color: var(--cyber-yellow) !important;
+    text-shadow: 0 0 14px rgba(252, 238, 10, 0.7) !important;
+}
+
+/* Hover effect on top tabs */
+[class*="_2Lu3d-5qLmW4i19ysTt2jT"]:hover [class*="_19axKcqYRuaJ8vdYKYmtTQ"] {
+    color: var(--cyber-cyan-bright) !important;
+    text-shadow: 0 0 8px rgba(0, 240, 255, 0.5) !important;
+}
+
+/* Active tab indicator bar */
+[class*="N8aJrSpxQ6II4CY_aFdYI"] {
+    background-color: var(--cyber-yellow) !important;
+    box-shadow: 0 0 10px rgba(252, 238, 10, 0.8), 0 0 20px rgba(252, 238, 10, 0.4) !important;
+}
+
+/* Classic menu text hover */
+[class*="_1Ky59qmywxOUtNcI1cgmkX"] [class*="_2UyOBeiSdBayaFdRa39N2O"]:hover {
+    color: var(--cyber-yellow) !important;
+}
+
+/* Classic menu Steam SVG */
+[class*="_1Ky59qmywxOUtNcI1cgmkX"] svg {
+    color: var(--cyber-cyan) !important;
+    fill: var(--cyber-cyan) !important;
+}
+
+/* ==========================================================================
+   3. SYSTEM CHIPS (Top Right: Megaphone, Notifications, Profile)
+   ========================================================================== */
+
+/* Active Megaphone Notice Badge (Neon Cyan) */
+[class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Szzh5sKyGgnLUR870zbDE"][class*="_1oEwirQksXfZ-3RWWslbAR"] {
+    background: rgba(0, 240, 255, 0.2) !important;
+    border-color: rgba(0, 240, 255, 0.6) !important;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.45) !important;
+}
+
+[class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Szzh5sKyGgnLUR870zbDE"][class*="_1oEwirQksXfZ-3RWWslbAR"] svg {
+    fill: var(--cyber-cyan) !important;
+    color: var(--cyber-cyan) !important;
+}
+
+/* Active Notification Badge (Neon Yellow) */
+[class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Szzh5sKyGgnLUR870zbDE"][class*="_3L1c8C0o_xXzPy26aoLBFd"] {
+    background: rgba(252, 238, 10, 0.2) !important;
+    border-color: rgba(252, 238, 10, 0.6) !important;
+    box-shadow: 0 0 10px rgba(252, 238, 10, 0.45) !important;
+}
+
+[class*="_3cykd-VfN_xBxf3Qxriccm"] [class*="_2Szzh5sKyGgnLUR870zbDE"][class*="_3L1c8C0o_xXzPy26aoLBFd"] svg {
+    fill: var(--cyber-yellow) !important;
+    color: var(--cyber-yellow) !important;
+}
+
+/* Profile Chip hover */
+[class*="_3yD46y5pd3zOGR7CzKs0mC"]:hover > div:not([class*="avatarHolder"]) {
+    color: var(--cyber-yellow) !important;
+}
+
+[class*="_3yD46y5pd3zOGR7CzKs0mC"]:hover svg[class*="_3x51wbt5DYyWC8JKwQ51ir"] {
+    fill: var(--cyber-yellow) !important;
+    color: var(--cyber-yellow) !important;
+}
+
+/* ==========================================================================
+   4. SIDEBAR GAME LIST
+   ========================================================================== */
+
+/* Sidebar container */
+[class*="RGNMWtyj73_-WdhflrmuY"],
+[class*="_3WJCt_OkjPA6npxOtguSt5"] {
+    background: linear-gradient(180deg, #0d1017 0%, #07080b 100%) !important;
+    border-right: 1px solid var(--cyber-border-cyan) !important;
+}
+
+/* Top filter bar in sidebar */
+[class*="_3x1HklzyDs4TEjACrRO2tB"] {
+    background: linear-gradient(180deg, #121622 0%, #0d1017 100%) !important;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.16) !important;
+}
+
+/* Category section headers (3DS, PC, PS1...) */
+[class*="_2sYIghGVXJr6tsQVvcryy8"] {
+    background: linear-gradient(to right, rgba(0, 240, 255, 0.14) 0%, rgba(13, 16, 23, 0) 100%) !important;
+    border-left: 2px solid var(--cyber-cyan) !important;
+    transition: background 0.2s ease !important;
+}
+
+[class*="_2sYIghGVXJr6tsQVvcryy8"]:hover {
+    background: linear-gradient(to right, rgba(0, 240, 255, 0.26) 0%, rgba(0, 240, 255, 0.05) 100%) !important;
+}
+
+/* Category header text */
+[class*="_2mZ8LlvoUiyeEUtIWuTri"] {
+    color: #f1f5f9 !important;
+    letter-spacing: 0.5px !important;
+}
+
+/* Selected game in sidebar list */
+[class*="_2TKEazUUS3TlniZfpc8OOe"][class*="Selected_"],
+[class*="_2-O4ZG0KrnSrzISHBKctFQ"][class*="_2ws8DONH9fxQjPXEmRpujE"]:focus,
+[class*="_2-O4ZG0KrnSrzISHBKctFQ"].Selected {
+    background: linear-gradient(90deg, rgba(252, 238, 10, 0.24) 0%, rgba(0, 240, 255, 0.06) 100%) !important;
+    border-left: 3px solid var(--cyber-yellow) !important;
+    color: #ffffff !important;
+    text-shadow: 0 0 8px rgba(252, 238, 10, 0.4) !important;
+}
+
+/* Hover on sidebar game item */
+[class*="_2TKEazUUS3TlniZfpc8OOe"]:hover,
+[class*="_2-O4ZG0KrnSrzISHBKctFQ"]:hover {
+    background-color: rgba(0, 240, 255, 0.08) !important;
+    border-radius: 4px !important;
+}
+
+/* ==========================================================================
+   5. ACTION BUTTONS AND PLAY BUTTON (Iconic Cyberpunk Yellow & Cyan)
+   ========================================================================== */
+
+/* Featured Recently Played hero play button (e.g. Dead Cells) */
+[class*="_3AjoLnMNKxYmNTGTJCLfgs"] {
+    background-image: radial-gradient(circle at 50% 50%, #fff54d 0%, #fcee0a 60%, #d6ca00 100%) !important;
+    box-shadow: 0 4px 18px rgba(252, 238, 10, 0.55), 0 0 10px rgba(0, 240, 255, 0.3) !important;
+    color: #07080b !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+[class*="_3AjoLnMNKxYmNTGTJCLfgs"] svg {
+    fill: #07080b !important;
+}
+
+[class*="_3AjoLnMNKxYmNTGTJCLfgs"]:hover {
+    transform: scale(1.06) !important;
+    box-shadow: 0 6px 26px rgba(252, 238, 10, 0.8), 0 0 16px rgba(0, 240, 255, 0.5) !important;
+}
+
+/* Centered Action Bar: Outer Play Button Capsule Glow */
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"] {
+    border: 1px solid rgba(252, 238, 10, 0.4) !important;
+    box-shadow: 0 4px 20px rgba(252, 238, 10, 0.4), 0 0 12px rgba(0, 240, 255, 0.25) !important;
+}
+
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"]:hover {
+    border-color: rgba(252, 238, 10, 0.7) !important;
+    box-shadow: 0 6px 28px rgba(252, 238, 10, 0.65), 0 0 18px rgba(0, 240, 255, 0.45) !important;
+}
+
+/* Installed Game Play Button (Signature Cyberpunk Yellow with Black Typography) */
+[class*="_3cI5TXsFX3bvpR-7EBOtxq"] > [class*="_2AzIX5kl9k6JnxLfR5H4kX"],
+[class*="_1fHBRg7vFnKszK6EiOdIEY"] button,
+[class*="_1fHBRg7vFnKszK6EiOdIEY"] [role="button"] {
+    background: var(--cyber-yellow-gradient) !important;
+    color: #07080b !important;
+    font-weight: 800 !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-radius: 8px !important;
+    box-shadow: 0 4px 18px rgba(252, 238, 10, 0.45) !important;
+    transition: transform 0.15s ease, box-shadow 0.15s ease !important;
+}
+
+[class*="_3cI5TXsFX3bvpR-7EBOtxq"] > [class*="_2AzIX5kl9k6JnxLfR5H4kX"] [class*="_3ydigb6zZAjJ0JCDgHwSYA"],
+[class*="_1fHBRg7vFnKszK6EiOdIEY"] button [class*="_3ydigb6zZAjJ0JCDgHwSYA"] {
+    color: #07080b !important;
+    text-shadow: none !important;
+    font-weight: 800 !important;
+}
+
+[class*="_3cI5TXsFX3bvpR-7EBOtxq"] > [class*="_2AzIX5kl9k6JnxLfR5H4kX"] svg,
+[class*="_1fHBRg7vFnKszK6EiOdIEY"] button svg {
+    fill: #07080b !important;
+    color: #07080b !important;
+    filter: none !important;
+}
+
+[class*="_3cI5TXsFX3bvpR-7EBOtxq"] > [class*="_2AzIX5kl9k6JnxLfR5H4kX"]:hover,
+[class*="_1fHBRg7vFnKszK6EiOdIEY"] button:hover,
+[class*="_1fHBRg7vFnKszK6EiOdIEY"] [role="button"]:hover {
+    background: linear-gradient(135deg, #ffffff 0%, #fff54d 35%, #fcee0a 100%) !important;
+    color: #000000 !important;
+    box-shadow: 0 6px 26px rgba(252, 238, 10, 0.7) !important;
+}
+
+[class*="_2q-gZ3XJzlvSGHSF-GvSmi"] {
+    border-left: 1px solid rgba(0, 0, 0, 0.25) !important;
+}
+
+[class*="_2q-gZ3XJzlvSGHSF-GvSmi"] svg {
+    fill: #07080b !important;
+}
+
+/* Uninstalled Game Install Button (Electric Cyan) */
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"]:not([class*="_3cI5TXsFX3bvpR-7EBOtxq"]) {
+    border: 1px solid rgba(0, 240, 255, 0.5) !important;
+    box-shadow: 0 4px 20px rgba(0, 240, 255, 0.45) !important;
+}
+
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"]:not([class*="_3cI5TXsFX3bvpR-7EBOtxq"]) > [class*="_2AzIX5kl9k6JnxLfR5H4kX"] {
+    background: var(--cyber-cyan-gradient) !important;
+    color: #07080b !important;
+    font-weight: 800 !important;
+}
+
+[class*="_1FnJ6dPuknQFQ2RTpKTI16"]:not([class*="_3cI5TXsFX3bvpR-7EBOtxq"]) svg {
+    fill: #07080b !important;
+}
+
+/* Achievements progress bar in game bar */
+[class*="_1FnTqlsi2_-TJf1d5apoS6"] {
+    background: linear-gradient(90deg, #00f0ff 0%, #fcee0a 100%) !important;
+    box-shadow: 0 0 8px rgba(0, 240, 255, 0.5) !important;
+}
+
+/* Secondary game bar buttons (Settings, Up arrow, Favorite) hover */
+[class*="_1YbtIWcfkQJOysLXQbwzRf"]:hover {
+    background: rgba(0, 240, 255, 0.15) !important;
+    border-color: rgba(0, 240, 255, 0.45) !important;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.3) !important;
+}
+
+[class*="_1YbtIWcfkQJOysLXQbwzRf"]:hover svg {
+    color: var(--cyber-cyan) !important;
+    fill: var(--cyber-cyan) !important;
+}
+
+/* ==========================================================================
+   6. GAME CARDS AND SHELVES
+   ========================================================================= */
+
+/* Cyberpunk dual-tone neon glow on game cards */
+[class*="WYgDg9NyCcMIVuMyZ_NBC"]:hover {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.8), 0 0 16px rgba(0, 240, 255, 0.4), 0 0 6px rgba(252, 238, 10, 0.3) !important;
+}
+
+/* Shelf title dropdown display */
+[class*="DialogDropDown_CurrentDisplay"] {
+    color: #f1f5f9 !important;
+}
+
+/* Shelf bottom separator */
+[class*="V7RuDNUxhxoBRaiGWbk3B"] {
+    border-bottom: 1px solid rgba(0, 240, 255, 0.12) !important;
+    padding-bottom: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+/* ==========================================================================
+   7. CUSTOM SCROLLBARS
+   ========================================================================== */
+
+::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(7, 8, 11, 0.7) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 240, 255, 0.32) !important;
+    border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cyber-cyan) !important;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.7) !important;
+}
+
+/* ==========================================================================
+   8. BOTTOM BAR / FOOTER & MOVED BUTTONS INTEGRATION
+   ========================================================================== */
+
+/* Main bottom bar container */
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"] {
+    background: linear-gradient(180deg, #0d1017 0%, #06070a 100%) !important;
+    border-top: 1px solid var(--cyber-border-cyan) !important;
+}
+
+/* Bottom bar text labels */
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_3OhUxFVlQYr9W5ThxstR8k"],
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"] [class*="_3wJnTtcTLEp0R7eQj_mK8Y"] {
+    color: #94a3b8 !important;
+    transition: color 0.15s ease !important;
+}
+
+/* Bottom bar SVG icons */
+[class*="_3vCzSrrXZzZjVJFZNg9SGu"] svg {
+    fill: var(--cyber-cyan) !important;
+    color: var(--cyber-cyan) !important;
+    transition: fill 0.15s ease, transform 0.15s ease !important;
+}
+
+/* Bottom bar buttons hover state */
+[class*="_2foCkpRXhqq0UGVE50BWqj"]:hover,
+[class*="ip-YZhijAMZcuRoXBGiye"]:hover,
+[class*="_1TdaAqMFadi0UTqilrkelR"]:hover {
+    background-color: rgba(0, 240, 255, 0.14) !important;
+    border-radius: 4px !important;
+}
+
+[class*="_2foCkpRXhqq0UGVE50BWqj"]:hover [class*="_3OhUxFVlQYr9W5ThxstR8k"],
+[class*="ip-YZhijAMZcuRoXBGiye"]:hover [class*="_3wJnTtcTLEp0R7eQj_mK8Y"],
+[class*="_1TdaAqMFadi0UTqilrkelR"]:hover [class*="_3OhUxFVlQYr9W5ThxstR8k"] {
+    color: var(--cyber-yellow) !important;
+}
+
+[class*="_2foCkpRXhqq0UGVE50BWqj"]:hover svg,
+[class*="ip-YZhijAMZcuRoXBGiye"]:hover svg,
+[class*="_1TdaAqMFadi0UTqilrkelR"]:hover svg {
+    fill: var(--cyber-yellow) !important;
+    color: var(--cyber-yellow) !important;
+}
+
+/* Moved download button: active progress and percentage */
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"]:has([class*="_2_FomluqqgQ2Hx8ON3AVep"]) svg {
+    fill: var(--cyber-cyan) !important;
+    color: var(--cyber-cyan) !important;
+}
+
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"] [class*="_1-TLiuTZBQNz2fvBGj6aq-"] {
+    color: var(--cyber-yellow) !important;
+}
+
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"] [class*="DialogProgressBar_Value"],
+[class*="_2EQ7ghgqIdjKv9jsQC0Zq9"] [class*="wi0pDywRgOCxhG7OqQNaA"]::after {
+    background: linear-gradient(90deg, #00f0ff 0%, #fcee0a 100%) !important;
+}
+
+/* Steam client update banner (bottom bar) */
+[class*="_2iJsgdTIX9Tj23rWnB7Q-c"] {
+    background: var(--cyber-yellow-gradient) !important;
+    color: #07080b !important;
+    font-weight: 700 !important;
+}

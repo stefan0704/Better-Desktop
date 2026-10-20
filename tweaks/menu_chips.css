@@ -1,0 +1,31 @@
+/* Better Desktop - Subtle Chips Menu */
+[class*="_1Ky59qmywxOUtNcI1cgmkX"] {
+    display: flex !important;
+    align-items: center !important;
+    gap: 5px !important;
+    padding-left: 4px !important;
+}
+
+[class*="_1Ky59qmywxOUtNcI1cgmkX"] [class*="_2UyOBeiSdBayaFdRa39N2O"] {
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 6px !important;
+    padding: 2px 8px !important;
+    font-size: 11px !important;
+    color: #94a3b8 !important;
+    line-height: 16px !important;
+    height: auto !important;
+    transition: all 0.15s ease !important;
+}
+
+[class*="_1Ky59qmywxOUtNcI1cgmkX"] [class*="_2UyOBeiSdBayaFdRa39N2O"]:hover {
+    background: rgba(234, 88, 12, 0.15) !important;
+    border-color: rgba(234, 88, 12, 0.45) !important;
+    color: #fb923c !important;
+    box-shadow: 0 0 8px rgba(234, 88, 12, 0.3) !important;
+}
+
+[class*="_1Ky59qmywxOUtNcI1cgmkX"] svg {
+    color: #ea580c !important;
+    fill: #ea580c !important;
+}
