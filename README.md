@@ -20,6 +20,28 @@ Transform your Steam desktop client with unified single-row navigation, centered
 
 ---
 
+## 🖼️ Preview
+
+<p align="center">
+  <b>🎮 Centered Game Action Bar & Extra Large Hero Banner</b><br>
+  <i>Modern centered Play button with state gradients, achievements progress, and quick controls.</i><br>
+  <img src="preview/game_details.png" alt="Game Details View - Centered Action Bar" width="100%">
+</p>
+
+<p align="center">
+  <b>📚 Library Home & Unified Header</b><br>
+  <i>Single-row 42px header, classic menu in capsules, moved top controls, and scaled shelves.</i><br>
+  <img src="preview/library_home.png" alt="Library Home with Unified Header and Shelves" width="100%">
+</p>
+
+<p align="center">
+  <b>📌 Sticky Floating Play Bar (Scrolled View)</b><br>
+  <i>The centered play bar seamlessly attaches to the top when scrolling down game details.</i><br>
+  <img src="preview/game_sticky_bar.png" alt="Sticky Floating Action Bar" width="100%">
+</p>
+
+---
+
 ## ⚙️ Customization Options
 
 All features are modular and can be toggled or configured directly through the **CSS Loader Theme Settings** menu:
@@ -68,6 +90,10 @@ All features are modular and can be toggled or configured directly through the *
 Better Desktop/
 ├── theme.json                          # CSS Loader theme manifest & patches
 ├── desktop.css                         # Base desktop CSS
+├── preview/                            # Showcase screenshots for GitHub
+│   ├── game_details.png
+│   ├── library_home.png
+│   └── game_sticky_bar.png
 ├── colors/
 │   ├── cyberpunk.css                   # Cyberpunk 2077 color scheme
 │   └── rusty.css                       # Warm industrial rusty color scheme
