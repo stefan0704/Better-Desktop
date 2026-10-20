@@ -1,6 +1,6 @@
 # Better Desktop for Steam 🎮✨
 
-A modern, sleek, and highly customizable theme for the **Steam Desktop Client**, designed for **Millennium** and **CSSLoader**.
+A modern, sleek, and highly customizable theme for the **Steam Desktop Client**, designed specifically for **CSS Loader**.
 
 Transform your Steam desktop client with unified single-row navigation, centered game details, customizable color palettes (including **Cyberpunk 2077** and **Rusty**), compact capsule buttons, and repositioned bottom-bar controls.
 
@@ -22,7 +22,7 @@ Transform your Steam desktop client with unified single-row navigation, centered
 
 ## ⚙️ Customization Options
 
-All features are modular and can be toggled or configured directly through the **Millennium / CSSLoader Theme Settings** menu:
+All features are modular and can be toggled or configured directly through the **CSS Loader Theme Settings** menu:
 
 | Setting | Options | Description |
 | :--- | :--- | :--- |
@@ -38,25 +38,27 @@ All features are modular and can be toggled or configured directly through the *
 
 ## 📥 Installation
 
-### Method 1: Millennium (Recommended on Windows)
+### Windows (CSS Loader Desktop)
 
-1. Make sure you have [Millennium](https://millennium.app/) installed for Steam.
-2. Download or clone this repository:
+1. Make sure you have [CSS Loader Desktop](https://github.com/suchmememanyskill/CSS-Loader) installed and running.
+2. Clone or download this repository into your CSS Loader themes folder:
    ```bash
-   git clone https://github.com/stefan0704/Better-Desktop.git
+   git clone https://github.com/stefan0704/Better-Desktop.git "%USERPROFILE%\homebrew\themes\Better Desktop"
    ```
-3. Copy the `Better Desktop` folder into your Millennium themes directory:
-   - **Windows:** `C:\Users\<YourUser>\homebrew\themes\Better Desktop`
-   - or directly through Millennium's theme manager.
-4. Open **Steam Settings > Millennium > Themes**, enable **Better Desktop**, and customize the options to your preference.
+   Or extract/place the `Better Desktop` folder manually into:
+   ```
+   C:\Users\<YourUser>\homebrew\themes\Better Desktop
+   ```
+3. Open CSS Loader Desktop, locate **Better Desktop**, enable it, and customize your settings.
 
-### Method 2: CSSLoader / Decky Loader
+### Steam Deck / SteamOS (Decky Loader + CSS Loader)
 
-1. Ensure CSSLoader is installed on your system.
+1. Ensure you have [Decky Loader](https://github.com/SteamDeckHomebrew/decky-loader) and the **CSS Loader** plugin installed.
 2. Place the `Better Desktop` folder in your themes directory:
-   - **Windows:** `%USERPROFILE%\homebrew\themes\Better Desktop`
-   - **Linux / SteamOS:** `~/.steam/steam/steamui/skins/` or `~/homebrew/themes/`
-3. Open CSSLoader, locate **Better Desktop**, and apply it.
+   ```bash
+   ~/homebrew/themes/Better Desktop
+   ```
+3. Open the Quick Access Menu (`...`), navigate to **Decky > CSS Loader**, enable **Better Desktop**, and pick your preferred options.
 
 ---
 
@@ -64,11 +66,11 @@ All features are modular and can be toggled or configured directly through the *
 
 ```
 Better Desktop/
-├── theme.json               # Millennium / CSSLoader theme manifest & patches
-├── desktop.css              # Base desktop CSS
+├── theme.json                          # CSS Loader theme manifest & patches
+├── desktop.css                         # Base desktop CSS
 ├── colors/
-│   ├── cyberpunk.css        # Cyberpunk 2077 color scheme
-│   └── rusty.css            # Warm industrial rusty color scheme
+│   ├── cyberpunk.css                   # Cyberpunk 2077 color scheme
+│   └── rusty.css                       # Warm industrial rusty color scheme
 ├── tweaks/
 │   ├── action_bar_centered.css         # Centered game page action bar
 │   ├── bottombar_move_top.css          # Repositioned bottom bar controls
@@ -78,14 +80,14 @@ Better Desktop/
 │   ├── menu_single_row.css             # Unified header (centered nav)
 │   ├── menu_single_row_centered_menu.css# Unified header (centered menu)
 │   └── recent_*.css                    # Scaled recently played shelves
-└── DOCUMENTACION.md         # Comprehensive CEF theme development technical guide
+└── DOCUMENTACION.md                    # Comprehensive CEF theme development technical guide
 ```
 
 ---
 
 ## 💡 Notes & Troubleshooting
 
-- **Switching Themes / Options:** Changes made in Millennium or CSSLoader apply immediately. If a UI element doesn't update, press `F5` in Steam or reload the client.
+- **Switching Themes / Options:** Changes made in CSS Loader apply immediately. If a UI element doesn't update, press `F5` in Steam or reload the client.
 - **Default Mode:** Every tweak is designed to revert cleanly to Steam's native appearance when set to `Default`.
 - **ASCII Compatibility:** All theme stylesheets maintain 100% 7-bit ASCII encoding for seamless compatibility with Windows local codecs.
 
@@ -94,4 +96,4 @@ Better Desktop/
 ## 📄 License & Credits
 
 Created by **stefan0704**.  
-Built for the Steam community with support for Millennium and CSSLoader.
+Built for the Steam community with support for **CSS Loader**.
